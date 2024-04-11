@@ -1,14 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1e2af8bef.js" crossorigin="anonymous"></script>
     </head>
-<header></header>
+<header>
+
+</header>
 <body>
+    <form novalidate="text">
+<div class="Paybody">
+    <div>
+        <h1>Select Payment - Kaejull Pack Exploration</h1>
+    </div>
+    <div #payinfo>
+        <div #Error></div>
+        
+        <div class="inputboxes">
+            <fieldset>
+                <legend>Card Info</legend>
+                <fieldset>
+                    
+                    <label>Card Number</label>
+                    <input type="text" id="Cardnumber" name="Card Number">
+                </fieldset>
+                <fieldset>
+                <label>CVC Number</label>
+                <input type="text" id="CVC" name="CVC">
+                </fieldset>
+                <fieldset>
+                <label>Payment <img src="https://i.imgur.com/82RPGMu.png" width="15px"></label>
+                <input type="text" id="Payammount" name="Payammount">
+                </fieldset>
+            </fieldset>
+        </div>
+    </div>
+    <div>
+        <legend>Personal Info</legend>
+        <div>
+            <fieldset>
+            <label>First Name</label>
+            <input type="text" id="firstname" name="First Name">
+            </fieldset>
+            <fieldset>
+            <Label>Pack Type</Label>
+            <input type="text" id="Packtype" name="Pack Type">
+            </fieldset>
+            <fieldset>
+                <h5>We accept all Avali & Human forms of payment.</h5>
+                <label><i class="fa-brands fa-cc-mastercard"></i></label>
+                <input type="radio" id="Mastercard" name="paycard">
+                    <label><i class="fa-brands fa-cc-visa"></i></label>
+                    <input type="radio" id="Visa" name="paycard">
+                <label><i class="fa-brands fa-cc-amex"></i></label>
+                <input type="radio" id="AmericanExpress" name="paycard">
+                    <label><img src="https://i.imgur.com/6MU1fvP.png" width=30px></label>
+                    <input type="radio" id="AvaliLume" name="paycard">
+            </fieldset>
+            <p>Conversion Rate: 1 USD - 0.5 Lume (500 Bits)</p>
+        </div>
+<div class="Personalbody">
+    <div>
+        <label>Pack Name/Last Name</label>
+        <input type="text" id="PNLN" name="PNLN">
+    </div>
+<div>
+    <fieldset><label>Homeworld</label><div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Homeworld
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Avalon - North</a></li>
+          <li><a class="dropdown-item" href="#">Avalon - South</a></li>
+          <li><a class="dropdown-item" href="#">Earth - USA</a></li>
+        </ul>
+      </div></fieldset>
+      <fieldset><label>Address (Only used for orders to Earth)</label><input type="text" id="Address" name="Address"></fieldset>
 
-
+</div>
+<fieldset><label>Message</label><input type=text id="message" name="message"></fieldset>
+</div>
+    </div>
     
+<div id="sendbutton"><div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-primary me-md-2" type="button">Cancel</button>
+    <button class="btn btn-primary" type="button">Pay Now</button>
+  </div></div>
+    </div>
+</form>
+
+
 </body>
 </html>

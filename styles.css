@@ -1,0 +1,8 @@
+.inputboxes {display:inline-flex;}
+
+.PersonalBody {display:flex;}
+
+#sendButton {display:flex;
+margin: 20px;}
+
+body {margin:50px;}
