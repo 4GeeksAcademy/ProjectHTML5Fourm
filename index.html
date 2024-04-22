@@ -10,39 +10,40 @@
 
 </header>
 <body>
+    
     <form novalidate="text">
 <div class="Paybody">
     <div>
         <h1>Select Payment - Kaejull Pack Exploration</h1>
     </div>
-    <div #payinfo>
-        <div #Error></div>
+    <div id="payinfo">
+        <div id="Error"></div>
         <legend>Card Info</legend>
         <div class="inputboxes">
                 <fieldset>
                     <label>Card Number</label>
-                    <input type="text" id="Cardnumber" name="Card Number">
+                    <input type="text" id="Cardnumber" name="Card Number" placeholder="1234 5678 9012">
                 </fieldset>
                 <fieldset>
                 <label>CVC Number</label>
-                <input type="text" id="CVC" name="CVC">
+                <input type="text" id="CVC" name="CVC" placeholder="123" size="5px">
                 </fieldset>
                 <fieldset>
                 <label>Payment <img src="https://i.imgur.com/82RPGMu.png" width="15px"></label>
-                <input type="text" id="Payammount" name="Payammount">
+                <input type="text" id="Payammount" name="Payammount" placeholder="1,150,321">
                 </fieldset>
         </div>
     </div>
     <div>
         <legend>Personal Info</legend>
-        <div class="Personalbody">
+        <div id="personalbody">
             <fieldset>
             <label>First Name</label>
-            <input type="text" id="firstname" name="First Name">
+            <input type="text" id="firstname" name="First Name" placeholder="Renali">
             </fieldset>
             <fieldset>
-            <Label>Pack Type</Label>
-            <input type="text" id="Packtype" name="Pack Type">
+            <Label>Pack Type / Occupation</Label>
+            <input type="text" id="Packtype" name="Pack Type" placeholder="Exploration / Merc. Pack">
             </fieldset>
             <fieldset>
             <h5>We accept all Avali & Human forms of payment.</h5>
@@ -57,26 +58,36 @@
             </fieldset>
             <p>Conversion Rate: 1 USD - 0.5 Lume (500 Bits)</p>
         </div>
-    <div class="Personalbody">
+    <div id="personalbody2">
     <div>
         <label>Pack Name/Last Name</label>
-        <input type="text" id="PNLN" name="PNLN">
+        <input type="text" id="PNLN" name="PNLN" placeholder="Kaejull">
     </div>
 <div>
-    <fieldset><label>Homeworld</label><div class="dropdown">
+    <fieldset><div class="dropdown">
+        <label>Select Homeworld</label>
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Select Homeworld
+          Ships to Avalon and Earth Only
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Avalon - North</a></li>
-          <li><a class="dropdown-item" href="#">Avalon - South</a></li>
-          <li><a class="dropdown-item" href="#">Earth - USA</a></li>
+          <li><a class="dropdown-item" href="#">Avalon - North Ice Shelf</a></li>
+          <li><a class="dropdown-item" href="#">Avalon - South Ice Shelf</a></li>
+          <li><a class="dropdown-item" href="#">Avalon - Nomadic</a></li>
+          <li><a class="dropdown-item" href="#">Avalon - Highwind Pack Region</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Earth - North America</a></li>
+          <li><a class="dropdown-item" href="#">Earth - South America</a></li>
+          <li><a class="dropdown-item" href="#">Earth - Europe</a></li>
+          <li><a class="dropdown-item" href="#">Earth - Asia</a></li>
+          <li><a class="dropdown-item" href="#">Earth - Australlia</a></li>
+          <li><a class="dropdown-item" href="#">Earth - Africa</a></li>
+          <li><a class="dropdown-item" href="#">Earth - Antarctica</a></li>
         </ul>
       </div></fieldset>
-      <fieldset><label>Address (Only used for orders to Earth)</label><input type="text" id="Address" name="Address"></fieldset>
+      <fieldset><label>Address (Only used for orders to Earth)</label><input type="text" id="Address" name="Address" placeholder="1234 address town, state/prov zip nation"></fieldset>
 
 </div>
-<fieldset><label>Message</label><input type=text id="message" name="message"></fieldset>
+<fieldset><label>Message</label><input type=text id="message" name="message" placeholder="Give Renali more cookies!"></fieldset>
 </div>
     </div>
     

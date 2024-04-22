@@ -1,20 +1,81 @@
-
-.PersonalBody {display:flex;}
-
-.sendButton {display:flex;
-margin: 20px;}
-
-div .inputboxes {display:flex;
+div .inputboxes {
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-evenly;
-padding:5px;}
+    padding: 5px;
+    z-index: 1;
+}
 
-fieldset {padding-left: 5px;
-padding-right: 5px;}
+fieldset {
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 1;
+}
 
-html {border-style: solid;
-border-width: 10px;
-margin:300px;
-align-self: center;
+html {
+    border-style: solid;
+    border-width: 10px;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 600px;
+    align-self: center;
+    border-color: orange;
+    background-color: black;
+    z-index: 1;
+}
+
+label {
+    padding:10px;
+    z-index: 1;
+}
+
+body {
+    background-color: gray;
+    z-index: 1;
+}
+
+form {
+    z-index: 1;
+    background-color: lightgray;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("https://i.imgur.com/JrCmHlj.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sendbutton { 
+    padding-right: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+}
+
+#personalbody {
+    display:inline-block;
+    z-index: 1;
+    align-content: flex-start;
+    border-right: 5px;
+    border: 0px;
+    border-style: dotted;
+}
+
+#personalbody2  {
+    display:inline-block;
+    justify-content: end;
+    z-index: 1;
+    align-content: end;
+    padding-left: 500px;
+    text-align: end;
+
+}
+
+#payinfo {
+    border: 0px;
+    border-bottom: 5px;
+    border-style: dotted;
+    z-index: 1;
 }
